@@ -6,6 +6,7 @@ import './Shop.css';
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [suggest, setSuggest] = useState([]);
   useEffect(() => {
     fetch('products.json')
       .then((res) => res.json())
@@ -15,6 +16,14 @@ const Shop = () => {
     const newCart = [...cart, product];
     setCart(newCart);
   }
+  const chooseOne = (products) => {
+    const newCart = [products];
+    setSuggest(newCart);
+  }
+  const removeCart = () => {
+    setCart([]);
+    setSuggest([]);
+  }
   return (
     <div className='shop-container'>
       <div className='products-container'>
@@ -23,7 +32,7 @@ const Shop = () => {
         }
       </div>
       <div className='selected-cart-container'>
-        <Cart cart={cart}></Cart>
+        <Cart cart={cart} product={products} chooseOne={chooseOne} suggest={suggest} chooseAgain={removeCart}></Cart>
       </div>
     </div>
   );
