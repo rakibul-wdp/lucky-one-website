@@ -6,8 +6,8 @@ const Faq = () => {
     <div className='question'>
       <h2 className='faq-header'>React Related FAQ...???</h2>
       <div>
-        <h4>How React Works...???</h4>
-        <p>
+        <h4 className='faq'>How React Works...???</h4>
+        <p className='ans'>
           React puts all of them in a root div. And create component base single page web application. React have JSX.It
           look like html but not that. JSX is simply syntactic sugar for creating very specific JavaScript objects. In
           react developer create multiple component and put them in app.js file like html tag. React mainly popular for
@@ -16,8 +16,8 @@ const Faq = () => {
         </p>
       </div>
       <div>
-        <h4>Difference Between Props and State...!!!</h4>
-        <table>
+        <h4 className='faq'>Difference Between Props and State...!!!</h4>
+        <table className='table'>
           <tr>
             <th>Props</th>
             <th>State</th>

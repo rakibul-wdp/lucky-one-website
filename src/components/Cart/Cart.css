@@ -1,12 +1,19 @@
 .choose-container {
   display: flex;
+  background-color: rgb(236, 218, 196);
+  padding: 2%;
+  border-radius: 8px;
+  margin: 7% 0;
 }
 .choose-container img {
-  width: 15%;
+  width: 25%;
   border-radius: 50%;
 }
 .cart-header {
   margin-bottom: 12%;
+}
+.choose-header {
+  margin: 7% 3%;
 }
 .btn-selected-cart {
   background-color: bisque;

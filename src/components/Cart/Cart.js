@@ -13,8 +13,8 @@ const Cart = ({ cart, chooseOne, suggest, product, chooseAgain }) => {
       {suggest.map((items) => (
         <div className='choose-container' key={items[Math.floor(Math.random() * cart.length)].id}>
           <img src={items[Math.floor(Math.random() * cart.length)].img} alt='' />
-          <h3>{items[Math.floor(Math.random() * cart.length)].name}</h3>
-          <button>
+          <h3 className='choose-header'>{items[Math.floor(Math.random() * cart.length)].name}</h3>
+          <button className='icon'>
             <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
           </button>
         </div>

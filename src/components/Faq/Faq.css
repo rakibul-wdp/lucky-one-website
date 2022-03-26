@@ -4,3 +4,14 @@
 .faq-header {
   text-align: center;
 }
+.faq {
+  font-size: 18px;
+  margin: 2% 0;
+}
+.ans {
+  padding: 0 15% 0 0;
+}
+.table th, .table td {
+  border: 1px solid bisque;
+  padding: 5px;
+}
