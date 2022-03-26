@@ -1,4 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import Name from '../Name/Name';
+import './Cart.css';
 
 const Cart = ({ cart, chooseOne, suggest, product, chooseAgain }) => {
   return (
@@ -8,9 +11,12 @@ const Cart = ({ cart, chooseOne, suggest, product, chooseAgain }) => {
         <Name product={product} key={product.id}></Name>
       ))}
       {suggest.map((items) => (
-        <div key={items[Math.floor(Math.random() * cart.length)].id}>
+        <div className='choose-container' key={items[Math.floor(Math.random() * cart.length)].id}>
           <img src={items[Math.floor(Math.random() * cart.length)].img} alt='' />
           <h3>{items[Math.floor(Math.random() * cart.length)].name}</h3>
+          <button>
+            <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
+          </button>
         </div>
       ))}
       <button onClick={() => chooseOne(product)}>Choose One</button>
@@ -20,5 +26,3 @@ const Cart = ({ cart, chooseOne, suggest, product, chooseAgain }) => {
 };
 
 export default Cart;
-
-// items[Math.floor(Math.random() * cart.length)]
