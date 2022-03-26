@@ -9,7 +9,7 @@ const Name = ({ product }) => {
     <div>
       <div className='cart-detail'>
         <img src={img} alt='' />
-        <p>{name}</p>
+        <h3 className='cart-product-name'>{name}</h3>
         <button>
           <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
         </button>

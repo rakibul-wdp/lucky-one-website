@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css';
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
         <h2>Pigeon Fair</h2>
         <img src="" alt="" />
       </div>
-      <div>
+      <div className='header-link'>
         <a href="/home">Home</a>
         <a href="/offers">Offers</a>
         <a href="/about">About</a>

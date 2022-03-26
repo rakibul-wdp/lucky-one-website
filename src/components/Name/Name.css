@@ -1,7 +1,11 @@
 .cart-detail {
   display: flex;
+  margin: 7% 0;
 }
 .cart-detail img{
-  width: 15%;
+  width: 25%;
   border-radius: 50%;
+}
+.cart-product-name {
+  margin: 7% 3%;
 }

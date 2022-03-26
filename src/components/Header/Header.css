@@ -1,0 +1,26 @@
+.header {
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 10%;
+}
+.header-link a {
+  margin-left: 65px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  transition: 0.2s;
+}
+.header-link a:hover {
+  background-color: rgb(206, 106, 88);
+  padding: 3px 10px;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-link a {
+    margin-left: 5%;
+  }
+}

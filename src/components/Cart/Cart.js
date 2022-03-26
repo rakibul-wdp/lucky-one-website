@@ -6,7 +6,7 @@ import './Cart.css';
 const Cart = ({ cart, chooseOne, suggest, product, chooseAgain }) => {
   return (
     <div>
-      <h2>Order summary</h2>
+      <h2 className='cart-header'>Order summary</h2>
       {cart.map((product) => (
         <Name product={product} key={product.id}></Name>
       ))}
@@ -19,8 +19,9 @@ const Cart = ({ cart, chooseOne, suggest, product, chooseAgain }) => {
           </button>
         </div>
       ))}
-      <button onClick={() => chooseOne(product)}>Choose One</button>
-      <button onClick={() => chooseAgain()}>Choose Again</button>
+      <button className='btn-selected-cart' onClick={() => chooseOne(product)}>Choose One</button>
+      <br />
+      <button className='btn-selected-cart' onClick={() => chooseAgain()}>Choose Again</button>
     </div>
   );
 };

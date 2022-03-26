@@ -9,14 +9,14 @@ const Product = ({product, handleAddToCart}) => {
     <div className='product'>
       <img src={img} alt='' />
       <div className='product-info'>
-        <p className='product-name'>{name}</p>
+        <h3 className='product-name'>{name}</h3>
         <p>Price: ${price}</p>
         <p>
           <small>Ratings: {ratings}</small>
         </p>
       </div>
       <button onClick={() => handleAddToCart(product)} className='btn-product'>
-        <p>Add to cart</p>
+        <p className='btn-text'>Add to cart</p>
         <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
       </button>
     </div>
